@@ -1,9 +1,8 @@
-﻿using HammerBros.Combat.KnockBack;
-using HammerBros.ModifierSystem;
-using UnityEngine;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
+using ModifierSystem;
+using Combat.KnockBack;
 
-namespace HammerBros.Core
+namespace Core
 {
     public class KnockBackReceiver : CoreComponent, IKnockBackable
     {

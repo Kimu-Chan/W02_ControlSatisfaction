@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 
-namespace HammerBros.Core
+namespace Core
 {
     public class CoreComp<T> where T : CoreComponent
     {
-        private Core core;
+        private global::Core.Core core;
         private T comp;
 
         public T Comp => comp ? comp : core.GetCoreComponent(ref comp);
 
-        public CoreComp(Core core)
+        public CoreComp(global::Core.Core core)
         {
             if (core == null)
             {

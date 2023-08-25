@@ -1,4 +1,4 @@
-﻿namespace HammerBros.ModifierSystem
+﻿namespace ModifierSystem
 {
     /*
      * The base abstract Modifier class is used so that we can store all modifiers in a list together so that we can iterate though them

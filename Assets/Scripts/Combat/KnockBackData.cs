@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace HammerBros.Combat.KnockBack
+namespace Combat.KnockBack
 {
     public class KnockBackData
     {

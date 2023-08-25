@@ -1,8 +1,7 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace HammerBros.Core
+namespace Core
 {
     public class ParticleManager : CoreComponent
     {

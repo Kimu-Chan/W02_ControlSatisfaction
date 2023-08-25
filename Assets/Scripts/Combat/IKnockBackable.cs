@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using HammerBros.Combat.KnockBack;
+using Combat.KnockBack;
 using UnityEngine;
 
 public interface IKnockBackable 

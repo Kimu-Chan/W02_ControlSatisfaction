@@ -1,21 +1,16 @@
-﻿/*using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using HammerBros;
-using HammerBros.Core;
-using Bardent.FSM;
-using Bardent.Weapons;
+using Core;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 public class Player : MonoBehaviour
 {
-    public GameObject BS;
-    public GameObject endText;
-    
     #region State Variables
     public PlayerStateMachine StateMachine { get; private set; }
 
+    
     public PlayerIdleState IdleState { get; private set; }
     public PlayerMoveState MoveState { get; private set; }
     public PlayerJumpState JumpState { get; private set; }
@@ -29,17 +24,13 @@ public class Player : MonoBehaviour
     public PlayerDashState DashState { get; private set; }
     public PlayerCrouchIdleState CrouchIdleState { get; private set; }
     public PlayerCrouchMoveState CrouchMoveState { get; private set; }
-    public PlayerAttackState PrimaryAttackState { get; private set; }
-    public PlayerAttackState SecondaryAttackState { get; private set; }
-
-    public PlayerStunState PlayerStunState { get; private set; }
 
     [SerializeField]
     private PlayerData playerData;
     #endregion
 
     #region Components
-    public Core Core { get; private set; }
+    public Core.Core Core { get; private set; }
     public Animator Anim { get; private set; }
     public PlayerInputHandler InputHandler { get; private set; }
     public Rigidbody2D RB { get; private set; }
@@ -58,7 +49,7 @@ public class Player : MonoBehaviour
     #region Unity Callback Functions
     private void Awake()
     {
-        Core = GetComponentInChildren<Core>();
+        Core = GetComponentInChildren<Core.Core>();
 
         Stats = Core.GetCoreComponent<Stats>();
         
@@ -77,7 +68,6 @@ public class Player : MonoBehaviour
         DashState = new PlayerDashState(this, StateMachine, playerData, "inAir");
         CrouchIdleState = new PlayerCrouchIdleState(this, StateMachine, playerData, "crouchIdle");
         CrouchMoveState = new PlayerCrouchMoveState(this, StateMachine, playerData, "crouchMove");
-        PlayerStunState = new PlayerStunState(this, StateMachine, playerData, "stun");
     }
 
     private void Start()
@@ -90,12 +80,12 @@ public class Player : MonoBehaviour
 
         Stats.Poise.OnCurrentValueZero += HandlePoiseCurrentValueZero;
         
-        StateMachine.Initialize(IdleState);
+        //StateMachine.Initialize(IdleState);
     }
 
     private void HandlePoiseCurrentValueZero()
     {
-        StateMachine.ChangeState(PlayerStunState);
+        //StateMachine.ChangeState(PlayerStunState);
     }
 
     private void Update()
@@ -119,9 +109,6 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.CompareTag("End"))
         {
-            //BLACK SCREEN
-            BS.gameObject.SetActive(true);
-            endText.SetActive(true);
             Time.timeScale = 0f;
         }
     }
@@ -148,4 +135,3 @@ public class Player : MonoBehaviour
    
     #endregion
 }
-*/

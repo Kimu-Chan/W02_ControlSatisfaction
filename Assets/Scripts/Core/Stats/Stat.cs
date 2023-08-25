@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace HammerBros.Core
+namespace Core
 {
     [Serializable]
     public class Stat

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace HammerBros.ModifierSystem
+namespace ModifierSystem
 {
     /*
      * The Modifiers class is a generic class for holding and acting upon a list of Modifiers of a specific type. It also allows us to

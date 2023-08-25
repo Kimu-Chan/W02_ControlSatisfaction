@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace HammerBros.Core
+namespace Core
 {
     public class Movement : CoreComponent
     {
@@ -17,8 +17,9 @@ namespace HammerBros.Core
         protected override void Awake()
         {
             base.Awake();
-
-            RB = GetComponentInParent<Rigidbody2D>();
+            var player = transform.parent.parent;
+            Debug.Log(player.name);
+            RB = player.Find("Model").GetComponent<Rigidbody2D>();//GetComponentInParent<Rigidbody2D>();
 
             FacingDirection = 1;
             CanSetVelocity = true;

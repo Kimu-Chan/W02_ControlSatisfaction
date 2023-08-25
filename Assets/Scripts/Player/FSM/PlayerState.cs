@@ -1,12 +1,12 @@
-﻿/*using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using HammerBros.Core;
+using Core;
 using TMPro;
 using UnityEngine;
 
 public class PlayerState
 {
-    protected Core core;
+    protected Core.Core core;
 
     protected Player player;
     protected PlayerStateMachine stateMachine;
@@ -61,4 +61,4 @@ public class PlayerState
     public virtual void AnimationFinishTrigger() => isAnimationFinished = true;
     
 
-}*/
+}

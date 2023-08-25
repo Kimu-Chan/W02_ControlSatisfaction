@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 //using Cinemachine;
 
-namespace HammerBros
+namespace Game1
 {
     public class GameManager : MonoBehaviour
     {
