@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - ParticleContainer
+  - End
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Damageable
+  - Dead
+  - Player
+  - Weapon
+  - 
+  - Platforms
+  - Player-2
+  - Volumes
+  - OneWayPlatforms
+  - Projectiles
+  - Enemies
+  - Pushables
+  - Ladder
+  - PlayerProjectiles
+  - MovingObjects
+  - MovingPlatforms
+  - Foreground
+  - MovingOneWayPlatforms
+  - NoCollision
+  - Background
+  - Friendlies
+  - Invulnerable
+  - Stairs
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2609032663
+    locked: 0
+  - name: Decoration
+    uniqueID: 3673200115
+    locked: 0
+  - name: InActiveProjectile
+    uniqueID: 1872149017
+    locked: 0
+  - name: Platforms
+    uniqueID: 3360281787
+    locked: 0
+  - name: Enemy
+    uniqueID: 358234179
+    locked: 0
+  - name: Player
+    uniqueID: 670960295
+    locked: 0
+  - name: ActiveProjectile
+    uniqueID: 42759921
+    locked: 0
+  - name: ForegroundDecoration
+    uniqueID: 1470174197
+    locked: 0
