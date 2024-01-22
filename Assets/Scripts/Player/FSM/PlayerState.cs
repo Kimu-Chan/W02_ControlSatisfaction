@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Core;
+using CoreSystem;
 using TMPro;
 using UnityEngine;
 
 public class PlayerState
 {
-    protected Core.Core core;
+    protected CoreSystem.Core core;
 
     protected Player player;
     protected PlayerStateMachine stateMachine;

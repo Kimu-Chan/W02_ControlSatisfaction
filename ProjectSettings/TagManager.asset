@@ -7,6 +7,10 @@ TagManager:
   - Enemy
   - ParticleContainer
   - End
+  - LevelBounds
+  - Music
+  - Background
+  - NoMask
   layers:
   - Default
   - TransparentFX
@@ -67,4 +71,10 @@ TagManager:
     locked: 0
   - name: ForegroundDecoration
     uniqueID: 1470174197
+    locked: 0
+  - name: VisibleParticles
+    uniqueID: 883054081
+    locked: 0
+  - name: UI
+    uniqueID: 1943216261
     locked: 0

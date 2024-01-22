@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 
-namespace Core
+namespace CoreSystem
 {
     public class CoreComp<T> where T : CoreComponent
     {
-        private global::Core.Core core;
+        private global::CoreSystem.Core core;
         private T comp;
 
         public T Comp => comp ? comp : core.GetCoreComponent(ref comp);
 
-        public CoreComp(global::Core.Core core)
+        public CoreComp(global::CoreSystem.Core core)
         {
             if (core == null)
             {

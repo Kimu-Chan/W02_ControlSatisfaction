@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Core
+namespace CoreSystem
 {
     public class Stats : CoreComponent
     {

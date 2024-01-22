@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Core
+namespace CoreSystem
 {
     public class ParticleManager : CoreComponent
     {

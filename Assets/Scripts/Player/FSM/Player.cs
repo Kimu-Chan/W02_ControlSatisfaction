@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Core;
+using CoreSystem;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     #endregion
 
     #region Components
-    public Core.Core Core { get; private set; }
+    public Core Core { get; private set; }
     public Animator Anim { get; private set; }
     public PlayerInputHandler InputHandler { get; private set; }
     public Rigidbody2D RB { get; private set; }
@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
     #region Unity Callback Functions
     private void Awake()
     {
-        Core = GetComponentInChildren<Core.Core>();
+        Core = GetComponentInChildren<CoreSystem.Core>();
 
         Stats = Core.GetCoreComponent<Stats>();
         

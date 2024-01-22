@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Core
+namespace CoreSystem
 {
     public class Death : CoreComponent
     {

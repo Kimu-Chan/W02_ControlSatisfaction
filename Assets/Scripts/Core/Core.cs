@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace Core
+namespace CoreSystem
 {
     public class Core : MonoBehaviour
     {

@@ -2,7 +2,7 @@
 using ModifierSystem;
 using Combat.KnockBack;
 
-namespace Core
+namespace CoreSystem
 {
     public class KnockBackReceiver : CoreComponent, IKnockBackable
     {
